@@ -1,42 +1,59 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body{
+  margin:0;
+  border:20px;
+  background: linear-gradient(280deg, #e0d9d9, #b772aa);
+  margin: 100px;
+  padding: 100px;
+  box-sizing: border-box;
+  font-family: 'Safari1', sans-serif;
+  display: flex;
+}
+.calculator {
+  height: 60%;
+  width: 100%;
+  border: 5px solid rgb(80, 75, 75);  /* Adds a black outline */
+  border-radius: 10px;
+  padding: 20px;            
+  display: inline-block; 
+  background:linear-gradient(1100deg, #0b0113, #4f4f51); 
+}
+.display{
+  width: 300px;
+  height: 30px;
+  font-size: 20px;
+  margin: 10px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: linear-gradient(110deg, #d49a9a, #e5e2e2);
+}
+.calculatorButtons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 300px;
+  margin: auto;
+  background: linear-gradient(145deg, #240d0d, #f3acac);
+  border-radius: 20px;
+  box-shadow: 5px 15px 15px rgba(12, 4, 117, 0);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.calculatorButtons input{
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: #d17ce7;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.calculatorButtons input:hover {
+  background: #eda6a6;
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.2), inset -3px -3px 6px rgba(255, 255, 255, 0.5);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calculatorButtons input:active {
+  background: #cdd19a;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
